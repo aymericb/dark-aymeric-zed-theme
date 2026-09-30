@@ -1,0 +1,7 @@
+id = "dark-aymeric-theme"
+name = "Dark Aymeric"
+version = "0.1.0"
+schema_version = 1
+authors = ["Aymeric Barthe <aymeric@barthe.ph>"]
+description = "A dark Zed theme with a VS Code Dark Modern palette for code and Ayu Dark for GUI."
+repository = "https://github.com/aymericb/dark-aymeric-zed-theme"
