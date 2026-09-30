@@ -1,0 +1,25 @@
+
+{
+  "name": "DarkAymericZedTheme",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "runArgs": ["--name", "dark-aymeric-dev", "--hostname", "dark-aymeric-dev"],
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": false,
+  "initializeCommand": [
+    "sh",
+    "${localWorkspaceFolder}/.devcontainer/create-state.sh",
+    "${localWorkspaceFolder}/.state"
+  ],
+  "mounts": [
+    "source=/run/host-services/ssh-auth.sock,target=/run/host-services/ssh-auth.sock,type=bind",
+    "source=${localWorkspaceFolder}/.state/t3,target=/home/vscode/.t3,type=bind",
+    "source=${localWorkspaceFolder}/.state/codex,target=/home/vscode/.codex,type=bind",
+    "source=${localWorkspaceFolder}/.state/claude,target=/home/vscode/.claude,type=bind"
+  ],
+  "workspaceFolder": "/workspaces/DarkAymericZedTheme",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {},
+  },
+  "postCreateCommand": ["bash", "${containerWorkspaceFolder}/.devcontainer/post-create.sh"]
+}
