@@ -8,6 +8,8 @@ It is a combination of two existing themes:
 
 - **GUI (editor chrome, panels, and UI):** based on Zed's built-in [Ayu Dark](https://github.com/zed-industries/zed/tree/main/assets/themes/ayu).
 
+> [!WARNING]
+> This theme is still in early development. Expect breaking changes: the color palette may shift significantly between versions. Use at your own risk.
 
 ## Preview Locally
 
